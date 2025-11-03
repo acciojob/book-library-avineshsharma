@@ -1,70 +1,58 @@
-/* Body styling */
 body {
-  font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-/* Page heading */
-h2 {
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-/* Container for all books */
 .book-library {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #ffffff;
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
 }
 
-/* Each book block */
 .book {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding: 20px;
+  background-color: #fff;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .book img {
-  width: 150px;
+  width: 100%;
   height: auto;
-  margin-right: 30px;
+  border-radius: 6px;
 }
 
-.book h3 {
+.book h2 {
   font-size: 18px;
-  text-align: left;
-  margin-bottom: 5px;
+  color: #333;
+  margin: 10px 0 5px;
 }
 
 .book p {
   color: #777777;
-  font-size: 14px;
-  text-align: left;
   margin: 0;
 }
 
-/* Arrange book info properly */
-.book div {
-  flex: 1;
-  text-align: left;
-}
-
-/* Price section */
-.price {
-  background-color: #2ecc71;
-  color: white;
-  padding: 8px;
-  text-align: center;
-  border-radius: 4px;
-  margin-top: 10px;
+.book .price {
+  color: #2ecc71;
   font-weight: bold;
+  margin-top: 8px;
 }
 
 
